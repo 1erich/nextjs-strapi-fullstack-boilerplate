@@ -24,6 +24,9 @@ export const getServerSideProps = async (context) => {
       },
     };
   }
+
+  console.log(session)
+  
   return {
     props: {},
   };
