@@ -15,6 +15,7 @@ export default function App({ Component, pageProps: {session, ...pageProps} }: A
     </Head>
     <SessionProvider session={session}>
       <Navigation />
+      <div className="pt-12"></div>
       <Component {...pageProps} />
     </SessionProvider>
   </>

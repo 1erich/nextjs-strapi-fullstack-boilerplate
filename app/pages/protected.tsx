@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Protected() {
   return (
     <div>
-      <h1>Protected Page</h1>
+      <h1 className="text-5xl">Protected Page</h1>
       <Link href="/">
         <button>Back to home page</button>
       </Link>
