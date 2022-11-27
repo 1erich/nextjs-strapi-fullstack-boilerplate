@@ -37,6 +37,9 @@ export default NextAuth({
   ],
   callbacks: {
     session: async ({ session, token }) => {
+
+      //console.log(token);
+
       session.id = token.id;
       session.jwt = token.jwt;
       return Promise.resolve(session);

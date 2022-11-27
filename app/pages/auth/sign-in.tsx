@@ -29,13 +29,13 @@ export default function SignIn() {
                                 <label className="label">
                                     <span className="label-text">Username or Email</span>
                                 </label>
-                                <input name="email" type="text" placeholder="" className="input input-bordered w-full" />
+                                <input name="email" type="text" placeholder="" value="hello@world.com" className="input input-bordered w-full" />
                             </div>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input name="password" type="password" placeholder="" className="input input-bordered w-full" />
+                                <input name="password" type="password" placeholder="" value="123123123" className="input input-bordered w-full" />
                             </div>
                             <div className="form-control w-full">
                                 <div><button type="submit" className="my-3 mt-6 btn btn-primary normal-case text-xl w-full">Sign In</button></div>
