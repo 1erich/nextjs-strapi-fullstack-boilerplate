@@ -1,6 +1,4 @@
-import Link from 'next/link'
-
-export default function Login() {
+export default function Resetpassword() {
     return (
         <>
             <div className="hero min-h-screen bg-base-200">
@@ -13,14 +11,7 @@ export default function Login() {
                             <input type="text" placeholder="" className="input input-bordered w-full" />
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input type="password" placeholder="" className="input input-bordered w-full" />
-                        </div>
-                        <div className="form-control w-full">
-                            <div><p className="my-3 mt-6 btn btn-primary normal-case text-xl w-full">Login</p></div>
-                            <div><Link href="reset"><p className="btn btn-ghost normal-case">Password reset</p></Link></div>
+                            <div><p className="my-3 mt-6 btn btn-primary normal-case text-xl w-full">Reset Password</p></div>
                         </div> 
                     </div>
                 </div>
