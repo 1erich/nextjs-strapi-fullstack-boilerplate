@@ -22,6 +22,9 @@ export default function Register() {
                             </label>
                             <input type="password" placeholder="" className="input input-bordered w-full" />
                         </div>
+                        <div className="form-control w-full">
+                            <div><p className="my-3 mt-6 btn btn-primary normal-case text-xl w-full">Register</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
