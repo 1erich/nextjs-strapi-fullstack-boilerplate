@@ -7,19 +7,13 @@ interface profileProps {
 
 export default function UserProfile({ ...props }) {
     return (<>
-        <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content text-center">
-                <div className="max-w-md">
-                    <div className="avatar">
-                        <div className="w-24 rounded-full">
-                            <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${props.avatar.url}`} />
-                        </div>
-                    </div>
-                    <h1 className="text-5xl font-bold">{props.name}</h1>
-                    <p className="py-6">{props.info}</p>
-                </div>
+        <div className="avatar">
+            <div className="w-24 rounded-full">
+                <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${props.avatar.url}`} />
             </div>
         </div>
+        <h1 className="text-xl font-bold">{props.name}</h1>
+        <p className="py-6">{props.info}</p>
     </>)
 }
 

@@ -6,7 +6,7 @@ import { SessionProvider } from 'next-auth/react';
 import Head from 'next/head'
 import Navigation from '../components/Navigation'
 
-export default function App({ Component, pageProps: {session, ...pageProps} }: AppProps) {
+export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return <>
     <Head>
       <title>Create Next App</title>
@@ -15,7 +15,14 @@ export default function App({ Component, pageProps: {session, ...pageProps} }: A
     </Head>
     <SessionProvider session={session}>
       <Navigation />
-      <Component {...pageProps} />
+      <div className="px-6">
+        <div className="text-center">
+          <div className="max-w-md mx-auto pt-24">
+            <Component {...pageProps} />
+          </div>
+        </div>
+      </div>
     </SessionProvider>
+
   </>
 }
