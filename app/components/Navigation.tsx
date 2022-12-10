@@ -20,7 +20,7 @@ export default function Navigation() {
                 )}
             </div>
             <div className="navbar-center">
-                <Link href="/"><span><a className="btn btn-ghost normal-case text-xl">Next.js Strapi Boilerplate</a></span></Link>
+                <Link href="/"><span className="btn btn-ghost normal-case text-xl">Next.js Strapi Boilerplate</span></Link>
             </div>
             <div className="navbar-end">
 

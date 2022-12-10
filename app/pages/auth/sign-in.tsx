@@ -36,14 +36,15 @@ export default function SignIn() {
                 </div>
                 <div className="form-control w-full">
                     <div><button type="submit" className="mt-6 btn btn-primary normal-case text-xl w-full">Sign In</button></div>
-                    <div><Link href="reset-password"><p className="btn btn-ghost normal-case">Forgot your Password?</p></Link></div>
-                    <div className="divider">OR</div>
-                    <div><button type="submit" className="my-3 mt-6 btn btn-primary normal-case text-xl w-full">Google SSO</button></div>
-                    <div className="divider">OR</div>
-                    <div><Link href="sign-up"><button type="submit" className="my-3 mt-6 btn btn-secondary normal-case text-xl w-full">Sign Up</button></Link></div>
+                    <div><Link href="forgot-password"><p className="btn btn-ghost normal-case">Forgot your Password?</p></Link></div>
                 </div>
             </form>
-
+            <div className="form-control w-full">
+                <div className="divider">OR</div>
+                <div><button type="submit" className="my-3 mt-6 btn btn-primary normal-case text-xl w-full">Google SSO</button></div>
+                <div className="divider">OR</div>
+                <div><Link href="sign-up"><button type="submit" className="my-3 mt-6 btn btn-secondary normal-case text-xl w-full">Sign Up</button></Link></div>
+            </div>
         </>
     )
 }
